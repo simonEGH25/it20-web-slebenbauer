@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Seite – Technik und Alltag</title>
+    <style>
+        :root {
+            --primary: #005a9c;
+            --background: #f3f7fa;
+            --text: #203040;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--background);
+            color: var(--text);
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header,
+        footer {
+            padding: 1.5rem;
+            background: var(--primary);
+            color: white;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: white;
+        }
+
+        nav a {
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            margin-bottom: 1.5rem;
+        }
+
+        .karte {
+            padding: 1.25rem;
+            border: 1px solid #c7d7e3;
+            border-radius: 8px;
+            background: white;
+        }
+
+        .seitenbild {
+            display: block;
+            width: 100%;
+            max-height: 360px;
+            margin: 1rem 0;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            main {
+                margin: 1rem auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meine Seite: Technik und Alltag</h1>
+        <p>Ein paar Dinge, die mich interessieren und inspirieren.</p>
+    </header>
+
+    <nav aria-label="Hauptnavigation">
+        <a href="#hobbys">Meine Hobbys</a>
+        <a href="#kontakt">Was ich lerne</a>
+    </nav>
+
+    <main>
+        <section id="hobbys" class="karte">
+            <h2>Meine Hobbys</h2>
+            <p>
+                In meiner Freizeit probiere ich gerne neue Dinge aus und verbringe
+                Zeit mit meinen Freunden. Besonders spannend finde ich Technik:
+                Es macht Spaß, herauszufinden, wie Geräte und Webseiten funktionieren.
+                Wenn ich nicht am Computer sitze, bin ich gerne draußen und genieße
+                eine Pause vom Bildschirm.
+            </p>
+            <ul>
+                <li>Neue Webseiten und digitale Ideen entdecken</li>
+                <li>Musik hören und dabei entspannen</li>
+                <li>Mit Freunden unterwegs sein</li>
+            </ul>
+            <img
+                class="seitenbild"
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                alt="Elektronische Platine mit sichtbaren Bauteilen und Leiterbahnen"
+            >
+        </section>
+
+        <section id="kontakt" class="karte">
+            <h2>Was ich gerade lerne</h2>
+            <p>
+                Zurzeit beschäftige ich mich mit HTML und CSS. Mit HTML gebe ich
+                einer Seite ihre Inhalte und Struktur; mit CSS gestalte ich Farben,
+                Abstände und Layouts. Am Anfang wirkt Code manchmal ungewohnt, aber
+                jeder kleine Erfolg motiviert mich weiterzumachen. Mein Ziel ist,
+                Schritt für Schritt eigene Seiten zu bauen, die übersichtlich sind
+                und auf dem Handy genauso gut funktionieren wie am Computer.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Danke für deinen Besuch auf meiner Seite!</p>
+    </footer>
+</body>
+</html>
